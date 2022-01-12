@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Auth from './views/Authorization/Auth';
+import SignIn from './views/Authorization/SignIn';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <Auth />
+            <SignIn />
           </Route>
         </Switch>
       </BrowserRouter>
