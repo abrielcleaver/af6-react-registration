@@ -39,14 +39,23 @@
 - [x] npm i > npm start
 - [x] create dev branch
 - [ ] App.js
-  - [x] import BrowserRouter, Switch, Route
-  - [x] import Auth from /views/Authorization/Auth.js
-- [x] initialize switch & route
-- [ ] create files & folders
+  - [x] import BrowserRouter, Switch, Route, & NavLink from react
+  - [ ] import useState from react
+  - [ ] import getUser from ./services/users
+  - [x] import SignIn from /views/Authorization/Auth.js
+  - [x] initialize switch & route
+  - add NavLinks for sign in & sign up
+
+- [x] create files & folders
   - [x] /src/views
     - [x] /Authorization
       - [x] auth.css
       - [x] auth.js
         - [x] import useState from 'react'
+        - [ ] import AuthForm from components
+        import { signInUser } from ../../services/users
         - [x] export function Auth()
         - [ ] write out full function
+  - [ ] /src/components
+    - [ ] /Authorization
+        - [ ] AuthForm.js
