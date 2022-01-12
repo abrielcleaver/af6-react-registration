@@ -1,9 +1,11 @@
 // import { useState } from 'react';
+import AuthForm from '../../components/Authorization/AuthForm';
 
 export default function Auth() {
   return (
     <div>
-      <h1>Authorization Page</h1>
+      <header>Authorization Page</header>
+      <AuthForm />
     </div>
   );
 }
