@@ -38,13 +38,15 @@
 
 - [x] npm i > npm start
 - [x] create dev branch
-- [ ] App.js
+- [x] App.js
+
   - [x] import BrowserRouter, Switch, Route, & NavLink from react
-  - [ ] import useState from react
-  - [ ] import getUser from ./services/users
-  - [x] import SignIn from /views/Authorization/Auth.js
+  - [x] import useState from react
+  - [x] import getUser from ./services/users
+  - [x] import SignIn from /views/Authorization/SignIn.js
+  - [x] import SignUp from /views/Authorization/SignUp.js
   - [x] initialize switch & route
-  - add NavLinks for sign in & sign up
+  - [x] add NavLinks for sign in & sign up
 
 - [x] create files & folders
   - [x] /src/views
@@ -52,10 +54,14 @@
       - [x] auth.css
       - [x] auth.js
         - [x] import useState from 'react'
-        - [ ] import AuthForm from components
-        import { signInUser } from ../../services/users
+        - [x] import AuthForm from components
+        - [ ] import { signInUser, signUpUser } from ../../services/users
         - [x] export function Auth()
         - [ ] write out full function
-  - [ ] /src/components
-    - [ ] /Authorization
-        - [ ] AuthForm.js
+      - [x] SignIn.js
+      - [x] SignUp.js
+  - [x] /src/components
+    - [x] /Authorization
+      - [x] AuthForm.js
+        - [x] import React
+        - [x] export DEFAULT function AuthForm({ errorMessage, email, setEmail, password, setPassword, handleSubmit, })
