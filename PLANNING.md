@@ -22,7 +22,7 @@
 - [ ] Users can sign up for an account
 - [ ] Users can sign in to an existing account
 - [ ] Users can logout of an account
-- [ ] Unauthenticated users see the option to sign in or sign up
+- [x] Unauthenticated users see the option to sign in or sign up
 - [ ] Authenticated users see something else
 
 ### Rubric
@@ -38,26 +38,32 @@
 
 - [x] npm i > npm start
 - [x] create dev branch
-- [x] App.js
-
+- [x] supabase key/url
+- [x] netlify variables
+- [x] github secrets
+- App.js To Do:
   - [x] import BrowserRouter, Switch, Route, & NavLink from react
+    - [ ] remove NavLink import once signin/signup are removed
   - [x] import useState from react
   - [x] import getUser from ./services/users
-  - [x] import SignIn from /views/Authorization/SignIn.js
-  - [x] import SignUp from /views/Authorization/SignUp.js
+  - [x] import SignIn & SignUp from /views/Authorization
+    - [ ] remove import once signin/signup are removed
   - [x] initialize switch & route
   - [x] add NavLinks for sign in & sign up
+    - [ ] remove NavLinks & routes to signin & signup once Auth is working properly
 
 - [x] create files & folders
   - [x] /src/views
     - [x] /Authorization
-      - [x] auth.css
-      - [x] auth.js
+      - [x] Auth.css
+        - [x] add styles for Auth
+      - [x] Auth.js
         - [x] import useState from 'react'
         - [x] import AuthForm from components
-        - [ ] import { signInUser, signUpUser } from ../../services/users
-        - [x] export function Auth()
-        - [ ] write out full function
+        - [x] import { signInUser, signUpUser } from ../../services/users
+        - [x] export function Auth({ setCurrentUser })
+        - [x] write out full function
+        - [ ] fix password issue -- won't save because it says "email needs @"
       - [x] SignIn.js
       - [x] SignUp.js
   - [x] /src/components
