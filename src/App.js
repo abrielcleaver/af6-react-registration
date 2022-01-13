@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { getUser } from './services/users';
 
 function App() {
-  const [currentUser, setCurrentUser] = useState(getUser());
+  const [currentUser] = useState(getUser());
 
   return (
     <div className="App">
