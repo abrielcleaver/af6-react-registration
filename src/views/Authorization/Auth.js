@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { signInUser, signupUser } from '../../services/users';
 import AuthForm from '../../components/Authorization/AuthForm';
+import classNames from 'classnames';
+import './Auth.css';
+
 
 export default function Auth({ setCurrentUser }) {
   const [type, setType] = useState('');
@@ -25,9 +28,25 @@ export default function Auth({ setCurrentUser }) {
 
   return (
     <div>
-      {/* <h3>Sign In</h3>
-      <h3>Sign Up</h3>
-      <p> Type: {type} </p> */}
+      <div className="tabs">
+        <h3
+          onClick={() => {
+            setType('signin');
+          }}
+          className={classNames({ active: type === 'signin' })}
+        >
+          Sign In
+        </h3>
+        <h3
+          onClick={() => {
+            setType('signup');
+          }}
+          className={classNames({ active: type === 'signup' })}
+        >
+          Sign Up
+        </h3>
+      </div>
+      <p> Type: {type}</p>
       <AuthForm
         errorMessage={errorMessage}
         email={email}
