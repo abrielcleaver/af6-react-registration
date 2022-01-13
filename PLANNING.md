@@ -1,7 +1,7 @@
 # Add Feature #6 Half Baked Registration
 
 - Due Tuesday Jan. 11 by 10am
-- Netlify link ->
+- Netlify Preview Deploy link -> https://deploy-preview-1--abriels-registration.netlify.app/
 - Use [this template](https://github.com/alchemycodelab/react-half-baked-registration) and your own supabase database for this app.
 
 ### Learning Objectives
@@ -63,7 +63,7 @@
         - [x] import { signInUser, signUpUser } from ../../services/users
         - [x] export function Auth({ setCurrentUser })
         - [x] write out full function
-        - [ ] fix password issue -- won't save because it says "email needs @"
+        - [x] fix password issue -- won't save because it says "email needs @"
       - [x] SignIn.js
       - [x] SignUp.js
   - [x] /src/components
