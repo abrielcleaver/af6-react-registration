@@ -43,14 +43,14 @@
 - [x] github secrets
 - App.js To Do:
   - [x] import BrowserRouter, Switch, Route, & NavLink from react
-    - [ ] remove NavLink import once signin/signup are removed
+    - [x] remove NavLink import once signin/signup are removed
   - [x] import useState from react
   - [x] import getUser from ./services/users
   - [x] import SignIn & SignUp from /views/Authorization
-    - [ ] remove import once signin/signup are removed
+    - [x] remove import once signin/signup are removed
   - [x] initialize switch & route
   - [x] add NavLinks for sign in & sign up
-    - [ ] remove NavLinks & routes to signin & signup once Auth is working properly
+    - [x] remove NavLinks & routes to signin & signup once Auth is working properly
 
 - [x] create files & folders
   - [x] /src/views

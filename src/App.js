@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Auth from './views/Authorization/Auth';
 import { useState } from 'react';
 import { getUser, logout } from './services/users';
@@ -14,8 +14,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavLink to="/signin">Sign In</NavLink>
-        <NavLink to="/signup">Sign Up</NavLink>
         <Switch>
           <Route exact path="/">
             {currentUser && (
