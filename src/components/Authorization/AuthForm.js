@@ -23,7 +23,7 @@ export default function AuthForm({
       <div className="form-controls">
         <label>Password:</label>
         <input
-          type="email"
+          type="password"
           placeholder="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}

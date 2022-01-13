@@ -7,4 +7,4 @@
 
 ### Description
 
-This app is solely focused on creating registration. There should be a single route (the "/" root or home page). When the user is not authenticated, the user should see sign in and sign up forms. When the user is authenticated, they should something else...anything else. A meme, a joke, a You Tube video.
+This app is solely focused on creating registration. There is a single route ("/" root or home page). When the user is not authenticated, the user should see sign in and sign up forms. When the user is authenticated, they will see something else.. a meme, a joke, a YouTube video, etc.
